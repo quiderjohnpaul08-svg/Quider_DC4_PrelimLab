@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f3f5f8;
+  color: #1c2430;
+}
+
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.header h1 { margin: 0 0 4px; font-size: 1.8rem; }
+.header p  { margin: 0; color: #5a6575; }
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.student-card {
+  background: #fff;
+  border: 1px solid #dde2ea;
+  border-radius: 8px;
+  padding: 16px;
+}
+.student-card h2 { margin: 0 0 8px; font-size: 1.15rem; }
+.student-card p  { margin: 4px 0; }
+
+.status { font-weight: 600; }
+.status.regular   { color: #1b7a43; }
+.status.irregular { color: #b4541a; }
+
+.attendance {
+  background: #fff;
+  border: 1px solid #dde2ea;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.attendance h2 { margin: 0 0 14px; }
+
+.buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  border: 1px solid #2f5fd0;
+  border-radius: 6px;
+  background: #2f5fd0;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background: #2450b3; }
+button:focus-visible { outline: 3px solid #9db8f5; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
